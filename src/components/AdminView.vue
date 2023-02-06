@@ -13,7 +13,7 @@ export default {
     return {
       title: "",
       image: "",
-      description: ""
+      description: "",
     };
   },
   methods: {
@@ -28,4 +28,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.viewColor {
+  color: red;
+}
+
+</style>
