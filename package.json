@@ -1,0 +1,19 @@
+{
+  "name": "fs-vue-portfolio",
+  "version": "0.2.0",
+  "private": true,
+  "author": "Krista Moroder & Germinal Camps for CodeOp",
+  "license": "Proprietary",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5050"
+  },
+  "dependencies": {
+    "vue": "^3.2.33"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.1",
+    "vite": "^2.9.5"
+  }
+}
