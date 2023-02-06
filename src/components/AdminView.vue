@@ -1,21 +1,25 @@
 <template>
   <div>
-    <form>
+    <form @submit.prevent="handleSubmit">
       <label> 
         Title
         <input v-model="title" />
       </label>
+
       <label>
         Image URL
-        <input v-model="image" />
+        <input v-model="imageUrl" />
       </label>
-      <label>
+
+      <label class="grid2Col">
         Project Description
         <textarea v-model="description"></textarea>
       </label>
-    </form>
 
-    <button @click="handleSubmit">SUBMIT</button>
+      <div class="grid2Col" style="text-align: center">
+        <button type="submit">SUBMIT</button> 
+      </div>
+    </form>
   </div>
 </template>
 
@@ -25,27 +29,31 @@ export default {
   data() {
     return {
       title: "",
-      image: "",
+      imageUrl: "",
       description: "",
     };
   },
   methods: {
     handleSubmit() {
-      this.$emit("createProject", {
-        title: this.title,
-        image: this.image,
-        description: this.description
-      });
+      console.log("new chicken nugger form submitted")
+
+      //create a new object
+      let newForm = {title: this.title, imageURL: this.imageUrl, description: this.description};
+      //send the createproject and object to the parent  
+      this.$emit("createProject", newForm);
+
+      // reset the form
+      this.title = '';
+      this.imageUrl = '';
+      this.description = '';
+
+      console.log(newForm)
     }
   }
 };
 </script>
 
 <style>
-.viewColor {
-  color: red;
-}
-
 
 form {
   display: grid;
@@ -57,5 +65,9 @@ form {
 input, textarea {
   display: block;
   width: 100%;
+}
+
+.grid2Col {
+  grid-column: 1 / span 2;
 }
 </style>
