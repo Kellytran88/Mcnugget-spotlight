@@ -1,7 +1,20 @@
 <template>
   <div>
-    Title
-    <input v-model="title" />
+    <form>
+      <label> 
+        Title
+        <input v-model="title" />
+      </label>
+      <label>
+        Image URL
+        <input v-model="image" />
+      </label>
+      <label>
+        Project Description
+        <textarea v-model="description"></textarea>
+      </label>
+    </form>
+
     <button @click="handleSubmit">SUBMIT</button>
   </div>
 </template>
@@ -33,4 +46,16 @@ export default {
   color: red;
 }
 
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  text-align: left;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+}
 </style>

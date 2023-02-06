@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Hello World</h1>
+    <h1>Hello Bunnies</h1>
     <button @click="isAdmin = true" :class="{ viewColor: isAdmin }">ADMIN</button>
     <button @click="isAdmin = false" :class="{ viewColor: !isAdmin }" >USER</button>
     <admin-view v-if="isAdmin" @createProject="addProject" />
