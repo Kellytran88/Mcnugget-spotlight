@@ -27,7 +27,6 @@ export default {
 
   methods: {
     shareId(id) {
-            console.log("userView" + id);
       this.$emit("shareId1", id); 
 
     }
