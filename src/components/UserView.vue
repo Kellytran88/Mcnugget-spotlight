@@ -1,14 +1,24 @@
 <template>
-  <div>User View</div>
-  <img />
+  <ThumbGrid :minion2="minion1"/>
+
+
 </template>
 
 <script>
+import ThumbGrid from "./ThumbGrid.vue";
+
 export default {
   name: "UserView",
-  //find the url image and turn it into an image
-  //create a space for image to appear on user view
+
+  props: ["minion1"],
+
+  components: {
+    ThumbGrid,
+}
+
 };
 </script>
 
-<style></style>
+<style>
+
+</style>
