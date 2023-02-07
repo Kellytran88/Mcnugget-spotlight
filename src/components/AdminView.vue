@@ -1,18 +1,18 @@
 <template>
   <div>
-    <form @submit.prevent="handleSubmit">
+    <form id="form" @submit.prevent="handleSubmit">
       <label> 
-        Name
+        McName
         <input type="text" v-model="title" />
       </label>
 
       <label>
-        Profile picture
+        McPicture
         <input type="url" v-model="imageUrl" placeholder="https://"/>
       </label>
 
       <label class="grid2Col">
-        About
+        McAbout
         <textarea v-model="description" placeholder="Sharing is caring, tell us more about you"></textarea>
       </label>
 
@@ -61,6 +61,9 @@ form {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   font-family: helvetica;
+  margin: 20px 0px;
+  padding: 0px 30px;
+  
 }
 
 input, textarea {
@@ -68,7 +71,7 @@ input, textarea {
   width: 100%;
   margin: 10px 0px;
   border: 1px solid #292929;
-  border-radius: 2px;
+  border-radius: 2.5px;
   padding: 5px;
   font-family: helvetica;
 }
@@ -92,7 +95,7 @@ input, textarea {
   margin: 5px 0px 10px;
 }
 
-button:hover {
+#form button:hover {
   color: #ffbc0d;
   background-color: #DA291C;
 }

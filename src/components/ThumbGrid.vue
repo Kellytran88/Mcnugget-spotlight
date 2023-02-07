@@ -1,6 +1,6 @@
 <template>
     <div id="userClass">
-      <h2>Shapes</h2>
+      <h2>McShapes</h2>
       <div class="thumbGrid">
         <!-- v-for = for each image in my whole array of objet -->
         <img class="thumbGrid" v-for="i in minion2"
@@ -23,6 +23,7 @@
     methods: {
       handleClick(id) {
         this.$emit("shareId2", id);
+        console.log("McDonald! McNugget! McLoving it!!!!!");
       },
     }
 
@@ -33,8 +34,9 @@
 #userClass .thumbGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
   text-align: center;
+  width: 80%;
+  margin: 20px auto;
 }
 
 #userClass .thumbGrid img {
@@ -43,8 +45,12 @@
   border-radius: 5%;
   aspect-ratio: 1 / 1;
   cursor: pointer;
-  border: 1px solid blue
+  border: 1px solid #ffbc0d;
+
 }
 
+#userClass .thumbGrid img:hover {
+  border: 1px solid #292929;
+}
 
   </style>

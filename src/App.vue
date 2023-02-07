@@ -1,10 +1,10 @@
 <template>
   <div id="App">
     <nav>
-      <h1>Secret life of Chicken Nuggets</h1>
+      <h1>The secret life of Chicken McNuggets</h1>
       <div class="buttonGrid">
-        <button @click="isAdmin = true" :class="{ active: isAdmin }">ADMIN</button>
-        <button @click="isAdmin = false" :class="{ active: !isAdmin }" >USER</button>
+        <button @click="isAdmin = true" :class="{ active: isAdmin }">ORDER</button>
+        <button @click="isAdmin = false" :class="{ active: !isAdmin }" >MENU</button>
       </div>
     </nav>
 
@@ -77,6 +77,7 @@ export default {
 nav {
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid #ffbc0d;
 
 }
 
@@ -88,7 +89,8 @@ nav {
 }
 
 .active {
-  color: red;
+  background-color: #DA291C;
+  color: #ffbc0d;
 }
 
 button {
