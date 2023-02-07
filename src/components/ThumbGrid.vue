@@ -7,26 +7,23 @@
         :key="i.id"
         :src="i.imageUrl"
         :alt="i.title"
-        @click="handleSummit(t.id)"
+        @click="handleClick(i.id)"
         />
       </div>
-
-
-          
-
     </div>
 </template>
 
   <script>
   export default {
-    name: "ThumbView",
+    name: "ThumbGrid",
     
+    emits: ["shareId2"],
     props: ["minion2"],
 
     methods: {
-      handleSummit(id) {
+      handleClick(id) {
         this.$emit("shareId2", id);
-      }
+      },
     }
 
   };
@@ -49,12 +46,5 @@
   border: 1px solid blue
 }
 
-div #userClass h2 {
-  border-bottom: 2px solid red;
-  font-family: monospace; 
-  font-size: 18px; 
-  font-style: normal; 
-  font-variant: small-caps; 
-  text-align: center;
-    }
+
   </style>

@@ -1,5 +1,7 @@
 <template>
-  <Spotlight :theNugget2="theNugget1"/>
+  <Spotlight 
+    :theNugget2="theNugget1"
+  />
 
   <ThumbGrid 
     :minion2="minion1"
@@ -16,17 +18,20 @@ export default {
 
   props: ["minion1", "theNugget1"],
 
+  emits: ["shareId1"],
+
   components: {
     ThumbGrid,
     Spotlight,
+  },
 
   methods: {
     shareId(id) {
+            console.log("userView" + id);
       this.$emit("shareId1", id); 
+
     }
   }
-}
-
 };
 </script>
 

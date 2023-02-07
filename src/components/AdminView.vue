@@ -2,18 +2,18 @@
   <div>
     <form @submit.prevent="handleSubmit">
       <label> 
-        Nugget title
+        Name
         <input type="text" v-model="title" />
       </label>
 
       <label>
-        Nugget URL
-        <input type="url" v-model="imageUrl" />
+        Profile picture
+        <input type="url" v-model="imageUrl" placeholder="https://"/>
       </label>
 
       <label class="grid2Col">
-        Nugget Description
-        <textarea v-model="description"></textarea>
+        About
+        <textarea v-model="description" placeholder="Sharing is caring, tell us more about you"></textarea>
       </label>
 
       <div class="grid2Col" style="text-align: center">
@@ -60,31 +60,30 @@ form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  text-align: left;
+  font-family: helvetica;
 }
 
 input, textarea {
   display: block;
   width: 100%;
+  margin: 10px 0px;
+  border: 1px solid #292929;
+  border-radius: 2px;
+  padding: 5px;
+  font-family: helvetica;
 }
 
-label {
-  font-family: monospace; 
-  font-size: 18px; 
-  font-style: normal; 
-  font-variant: small-caps; 
-} 
 
 .grid2Col {
   grid-column: 1 / span 2;
 }
 
 .button {
-  background-color: #fbeee0;
-  border: 2px solid #422800;
+  background-color: #ffbc0d;
+  border: 2px solid #292929;
   border-radius: 30px;
-  box-shadow: #422800 4px 4px 0 0;
-  color: #422800;
+  box-shadow: #292929 4px 4px 0 0;
+  color: #292929;
   cursor: pointer;
   font-weight: 600;
   font-size: 18px;
@@ -94,7 +93,8 @@ label {
 }
 
 button:hover {
-  background-color: #fff;
+  color: #ffbc0d;
+  background-color: #DA291C;
 }
 
 /* https://images.bauerhosting.com/legacy/lifestyle-legacy/97/65414/90b1f/f0375/58909/1f28a/f2086/IMG_0496_640x640.jpg?q=80&w=440 */

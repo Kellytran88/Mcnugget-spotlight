@@ -15,7 +15,7 @@
 export default {
     name: "Spotlight",
 
-    props: ["theNugget2"]
+    props: ["theNugget2"],
 }
 </script>
 
