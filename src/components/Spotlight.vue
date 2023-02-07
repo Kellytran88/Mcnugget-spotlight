@@ -35,6 +35,5 @@ export default {
   border: 1px solid brown
 }
 
-spli
 
 </style>
