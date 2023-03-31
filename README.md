@@ -1,20 +1,25 @@
-# Vue
+# Context
 
-In this repository, you will use Vue to build a SPA (Single Page Application).
-
-## Objectives
+On week 4 of my training with [CodeOp](http://CodeOp.tech) in 2023, I had to use Vue to build a SPA (Single Page Application).
 
 - Use Vue components to build a website portfolio.
 - Pass props to child components and propogate changes back up to parent components.
 - Use state to respond to changes.
 
+## Idea
+
+Why chicken McNugget? Well the answer is direct: because I love chicken McNugget and want to do something fun to help me practice.
+You can notice that the colour are one brand with the McDonald brand... just because "I'm loving it"...
+
+Enjoy it and see below how to run it on your local host.
+
 ## Setup & Run
 
 1. Type `npm install` to install packages.
-1. Type `npm run dev` to run the development server.
-1. Point your browser at `http://localhost:3000`.
+2. Type `npm run dev` to run the development server.
+3. Point your browser at `http://localhost:3000`.
 
-## Basic Requirements
+## Objectives to achieve
 
 ### 1. Add two views - one for the user and one for the admin
 
@@ -57,7 +62,3 @@ In this repository, you will use Vue to build a SPA (Single Page Application).
 
 - [Vue docs - single file components](https://vuejs.org/guide/scaling-up/sfc.html)
 - [Vue docs - components](https://vuejs.org/guide/essentials/component-basics.html)
-
-## Notes
-
-_This is a student project that was created at [CodeOp](http://CodeOp.tech), a full stack development bootcamp in Barcelona._
